@@ -1,0 +1,2 @@
+#include<bits/stdc++.h>
+int m[1300000];int main(){int n=1300000,i,p;for(p=2;p*p<=n;p++){if(m[p] == 0){for(i=p*2;i<=n;i+=p)m[i]=1;}}std::vector<int>v;for(p=2;p<=n;p++)if(m[p]==0)v.push_back(p);while(scanf("%d",&i)!=EOF){printf("%d\n",v[i-1]);}}
